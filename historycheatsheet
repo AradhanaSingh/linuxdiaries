@@ -4,6 +4,9 @@
 !!
 #run the previous command
 
+Ctl+R 
+#Reverse index search (allows you to type part of a command. searches in reverse order through command history for a matching command)
+
 !string
 #run most recent command starting with characters in string
 
