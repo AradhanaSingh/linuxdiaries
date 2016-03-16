@@ -7,13 +7,6 @@ can select text using cursor
 
 Insert Mode(i)
 ------------------
-h - move corsor left
-j - move cursor down
-k - move cursor up
-l - move cursor right
-can perfix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines
-
-
 w - jump forwards to the start of the word
 W - jump forwards to the start of the word(words can contain punctuation)
 
@@ -22,6 +15,12 @@ E - jump forwards to the end of the word(words can comatin punctuation)
 
 b - jump backwards to the start of the word
 B - jump backwards to the start of a word(words can contain punctuation)
+
+h - move cursor left
+j - move cursor down
+k - move cursor up
+l - move cursor right
+can perfix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines
 
 0 - jump to the start of the line
 ^ - jump to teh first non-blank character of the line
