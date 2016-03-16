@@ -1,0 +1,154 @@
+Vim Cheat Sheet
+-------------------
+Cursor Movement
+-------------------
+Visual Mode(v)
+can select text using cursor
+
+Insert Mode(i)
+------------------
+h - move corsor left
+j - move cursor down
+k - move cursor up
+l - move cursor right
+can perfix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines
+
+
+w - jump forwards to the start of the word
+W - jump forwards to the start of the word(words can contain punctuation)
+
+e - jump forwards to the end of the word
+E - jump forwards to the end of the word(words can comatin punctuation)
+
+b - jump backwards to the start of the word
+B - jump backwards to the start of a word(words can contain punctuation)
+
+0 - jump to the start of the line
+^ - jump to teh first non-blank character of the line
+$ - jump to the end of the line
+
+G - go to the last line of the document
+5G - go to the line 5
+:1 or 1G - go to line 1
+:$ or G - go to last line of the page
+
+/pattern - search for pattern
+?pattern - search backward for pattern
+
+:%s/old/new/g - replace all old with new throughout file
+:%s/old/new/gc - replace all old with new throughout file with confirmations
+
+-------------------
+Cut and paste
+-------------------
+
+yy - copy a line  
+2yy - copy 2 lines
+ 
+yw - copy to the end of the word(copies a word from the first character upto end of word)
+
+y$ - copy to the end of the line
+
+p - put the clipboard after cursor
+P - put before cursor
+
+dd - delete a line
+2dd - dlete 2 lines
+
+dw - delete(cut) to the end of the word
+D - delete(cut) to the end of the line
+d$ - delete(cut) to the end of the line
+
+x - delete(cut character)
+Source: http://vim.rtorr.com/
+
+
+3>>
+#to tab 3 lines
+
+After pressing ctrl+s, press ctrl+q 
+
+:u
+for undo
+
+:set number
+shows line number in file
+
+
+:s///
+above command is used to substitute in the specified line
+
+:s/old/new/g 
+changes all old to new in the current line
+
+:66,70s/^/#
+Add # in front of line from 66 to 70
+
+:66,70s/^#/
+Remove # in front of line from 66 to 70
+
+:11,15s/old/new/g 
+changes all old to new from lines 11 to 15 inclusive
+
+:%s/old/new/g
+changes all lines
+
+Range  Description
+$     end of the file
+.     current line
+%     all lines from 1 to $
+.,$   current to the end
+.+1,$ line after current till the end
+.,.+5 current to current+5 inclusive
+.,.5 current to current+5 inclusive
+
+
+:s/old/new/g is similar to :.s/old/new/g , substitute in the current line
+:g/old/  is similar to :%g/old/ list all lines matching old
+:w my.txt similar to :%w my.txt write all line to my.txt
+:21,25w my1.txt ,  write lines from 21 to 25(inclusive) in my1.txt
+
+:s is substitute(default is .)
+:g find all lines (default is %)
+:w write to a different file (default is %)
+
+d #delete
+t #copy and paste
+m #move
+
+:21,25d 
+#delete lines from 21 to 25
+
+:$d
+#delete the last line
+
+:21,25t 30
+#copy lines from 21 to 25 inclusive and put it after line 30
+
+:3t 0
+#copy line number 3 and put it after line 0 i.e before line 1
+
+:21,25m 30
+#move lines from 21 to 25(inclusive) just after line 30
+
+:$m 0
+#move the last line after line 0 i.e before line 1
+
+to mark the line
+ma
+mb
+
+:marks
+#show all the marks
+
+:delmarks ma
+#delete mark ma
+
+'a
+#jump to the line to mark a
+
+:marks a
+#list marks a
+
+Source:
+http://vim.wikia.com/wiki/Ranges
