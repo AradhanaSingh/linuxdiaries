@@ -1,0 +1,11 @@
+!n
+#run command number n
+
+!!
+#run the previous command
+
+!string
+#run most recent command starting with characters in string
+
+!?string
+#run most recent command containing !?string
