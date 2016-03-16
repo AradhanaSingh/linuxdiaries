@@ -1,15 +1,6 @@
 grep searches the named input FILEs (or standard input if no files are named, or if a single hyphen-minus (-) is given as file name)
 for lines containing a match to the given PATTERN.  By default, grep prints the matching lines.
 
-grep -Ril --perl-regexp "\b\d{3}-\d{3}-\d{4}\b" /root/
-//grep with regular expression , will look for pattern which digits followed by hypen, followed by 4 , then hyphen and 3 more
-//Example 898-772-9878
-
- grep -Ri --perl-regexp "\b\(?\d{3}\)? \d{3}-\d{4}\b" 
- //(564) 848-9898
-
-http://ryanstutorials.net/linuxtutorial/grep.php 
-
 grep foo file 
 returns all the lines that contain a string matching the expression "foo" in the file "file"
 
