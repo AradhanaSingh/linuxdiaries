@@ -1,0 +1,8 @@
+Navigation on command line
+
+Ctrl+U #clears the whole line
+Ctrl+K #deletes from cursor to the end of the line
+Ctrl+W #deletes the word before the cursor only 
+Ctrl+f #forward character by character
+Ctrl+b #move backward character by character
+Ctl+R #Reverse index search (allows you to type part of a command. searches in reverse order through command history for a matching command)
