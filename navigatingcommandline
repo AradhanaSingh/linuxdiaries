@@ -3,7 +3,7 @@ Navigation on command line
 Ctrl + a # Move to the start of line
 Ctrl + e # Move to the end of line
 Alt + f # Move forward a word (a word contains alphabets and digits, no symbols)
-Meta + b # Move backward a word 
+Alt + b # Move backward a word 
 Ctrl + l # Clear the screen 
 
 Ctrl+U #clears the whole line
